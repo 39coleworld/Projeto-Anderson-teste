@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anderson Eletricista</title>
+    <!-- GOOGLE FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--LINK ICON-->
+    <link rel="icon" href="./assets/icon/icon.png">
+    <!-- LINK STYLE CSS -->
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- MENU -->
+    <header class="header" id="home">
+        <img id="logo" src="./assets/img/logo_cropped.png">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTAINER - HOME -->
+    <div class="container-home">
+
+        <!-- SLIDER -->
+        <div id="slider">
+            <img class="selected" src="assets/img/logo_definitivo.jfif">
+            <img src="assets/img/img-002.jpg">
+            <img src="assets/img/img-004.jpg">
+            <img src="assets/img/img-005.jpg">
+            <img src="assets/img/img-006.jpg">
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="div-button">
+            <button class="button"><a
+                    href="https://api.whatsapp.com/send?phone=+5511985814851&text=Entre em contato comigo"
+                    target="_blank">
+                    Contato
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                    </svg>
+                </a>
+            </button>
+        </div>
+
+        <button id="button-top">
+            <a href="https://api.whatsapp.com/send?phone=+5511985814851&text=Olá, gostaria de solicitar um serviço!"
+                target="_blank">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" fill="currentColor"
+                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                </svg>
+            </a>
+        </button>
+    </div>
+
+    <!-- SERVIÇOS -->
+    <div class="container-servicos" id="services">
+
+        <section class="serviços">
+            <h3 class="paragraph">
+                Serviços Elétricos
+            </h3>
+            <p class="p-text">
+                Atendemos aos mais variados tipos de necessidades em manuntenção e instalação elétrica.
+            </p>
+
+            <h3 class="paragraph">
+                Projeto e Instalação
+            </h3>
+            <p class="p-text">
+                Projetos elétricos, reformas elétricas, instalações elétricas, caixa de luz 1 a 12 mediadores,
+                instalação<br>
+                e ventiladores, instalação de luminárias e infraestrutura.
+            </p>
+
+            <h3 class="paragraph">
+                Padrão ENEL
+            </h3>
+            <p class="p-text">
+                Reparo em instalação para padrão de caixa de luz ENEL. Atendimento com técnico habilitado.
+            </p>
+
+            <h3 class="paragraph">
+                Manuntenção e Reparo
+            </h3>
+
+            <p class="p-text">
+                Alinhamento de carga, reparo de curto-circuito, troca de tomadas, troca de tomadas de 110 para
+                220,<br>
+                conserto de tomadas e interruptores.
+            </p>
+        </section>
+    </div>
+
+    <!-- SOBRE -->
+    <div class="container-about" id="about">
+
+        <section class="about">
+            <h3 class="paragraph-about">
+                Quem Somos
+            </h3>
+            <p class="p-text-about">
+                A Anderson Eletricista é uma empresa<br>
+                que atua com prestação de serviços<br>
+                elétricos industriais, residenciais e<br>
+                comerciais.Com uma equipe de<br>
+                profissionais preparados, procuramos<br>
+                atender nossos clientes com qualidade<br>
+                e garantia dos serviços prestados.
+            </p>
+        </section>
+
+        <section class="about">
+            <h3 class="paragraph-about">
+                Vantagens
+            </h3>
+            <p class="p-text-about">
+                Segurança e proteção das instalações<br>
+
+                Entrega garantida no prazo estabelecido<br>
+
+                Economia de energia<br>
+
+                Exclusividade, diversidade e bom gosto.
+            </p>
+        </section>
+
+        <div class="div-button-about">
+            <button class="button"><a
+                    href="https://api.whatsapp.com/send?phone=+5511985814851&text=Olá, gostaria de solicitar um serviço!"
+                    target="_blank">
+                    Contato
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                    </svg>
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container-footer" id="contact">
+        <div class="brand">
+            <a class="logo-footer" href="#home">Anderson Eletricista</a>
+            <p class="p-text-footer">Rua Xavier de Andrade, 6 - Jardim Nélia</p>
+            <p class="p-text-footer">coleworld.developer@outlook.com</p>
+            <p class="brand-text">(11) 98581-4851</p>
+
+            <div class="pay-footer">
+                <p class="p-text-footer">Formas de pagamento</p>
+                <img class="img-pay" src="assets/icon/icon-boleto.svg">
+                <img class="img-pay" src="assets/icon/icon-visa.svg">
+                <img class="img-pay" src="assets/icon/icon-elo.svg">
+                <img class="img-pay" src="assets/icon/icon-hipercard.svg">
+                <img class="img-pay" src="assets/icon/icon-mastercard.svg">
+                <img class="img-pay" src="assets/icon/icon-itau.svg">
+                <img class="img-pay" src="assets/icon/icon-pix.svg">
+
+                <p class="p-text-footer">©2022 Desenvolvido por Cole World Developer. Todos os direitos reservados.</p>
+            </div>
+        </div>
+
+        <div class="social-footer">
+            <a href="https://www.instagram.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0 0 172 172"
+                    style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#ffffff">
+                            <path
+                                d="M57.33333,21.5c-19.7585,0 -35.83333,16.07483 -35.83333,35.83333v57.33333c0,19.7585 16.07483,35.83333 35.83333,35.83333h57.33333c19.7585,0 35.83333,-16.07483 35.83333,-35.83333v-57.33333c0,-19.7585 -16.07483,-35.83333 -35.83333,-35.83333zM57.33333,35.83333h57.33333c11.85367,0 21.5,9.64633 21.5,21.5v57.33333c0,11.85367 -9.64633,21.5 -21.5,21.5h-57.33333c-11.85367,0 -21.5,-9.64633 -21.5,-21.5v-57.33333c0,-11.85367 9.64633,-21.5 21.5,-21.5zM121.83333,43c-3.95804,0 -7.16667,3.20863 -7.16667,7.16667c0,3.95804 3.20863,7.16667 7.16667,7.16667c3.95804,0 7.16667,-3.20863 7.16667,-7.16667c0,-3.95804 -3.20863,-7.16667 -7.16667,-7.16667zM86,50.16667c-19.7585,0 -35.83333,16.07483 -35.83333,35.83333c0,19.7585 16.07483,35.83333 35.83333,35.83333c19.7585,0 35.83333,-16.07483 35.83333,-35.83333c0,-19.7585 -16.07483,-35.83333 -35.83333,-35.83333zM86,64.5c11.85367,0 21.5,9.64633 21.5,21.5c0,11.85367 -9.64633,21.5 -21.5,21.5c-11.85367,0 -21.5,-9.64633 -21.5,-21.5c0,-11.85367 9.64633,-21.5 21.5,-21.5z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+
+            <a href="http://facebook.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0 0 172 172"
+                    style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#ffffff">
+                            <path
+                                d="M86,14.33333c-39.49552,0 -71.66667,32.17115 -71.66667,71.66667c0,39.49552 32.17115,71.66667 71.66667,71.66667c39.49552,0 71.66667,-32.17115 71.66667,-71.66667c0,-39.49552 -32.17115,-71.66667 -71.66667,-71.66667zM86,28.66667c31.74921,0 57.33333,25.58412 57.33333,57.33333c0,28.77035 -21.03186,52.40996 -48.59896,56.60547v-39.51465h16.6849l2.61751,-16.95085h-19.30241v-9.26628c0,-7.04483 2.29501,-13.29752 8.88834,-13.29752h10.58203v-14.79525c-1.86333,-0.25083 -5.7957,-0.79785 -13.22754,-0.79785c-15.523,0 -24.62142,8.19867 -24.62142,26.875v11.2819h-15.95703v16.95085h15.95703v39.37467c-27.11871,-4.57277 -47.68913,-28.01213 -47.68913,-56.46549c0,-31.74921 25.58412,-57.33333 57.33333,-57.33333z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <script src="app.js"></script>
+
+</body>
+
+</html>
