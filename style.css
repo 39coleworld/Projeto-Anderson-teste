@@ -1,3 +1,4 @@
+/* CONFIGURAÇÕES GERAIS */
 * {
     margin: 0px;
     padding: 0px;
@@ -13,13 +14,12 @@ body {
     background: #e9e9e9;
 }
 
-
+/* MENU */
 ul {
     margin: 0px;
     padding: 0px;
 }
 
-/* MENU */
 a {
     color: #FFFFFF;
     text-decoration: none;
@@ -311,9 +311,14 @@ a:hover {
         width: 200%;
     }
 
+    /* SERVIÇOS */
+    .container-servicos {
+        height: 90vh;
+    } 
+
     /* ABOUT */
     .container-about {
-        height: 70vh;
+        height: 80vh;
         flex-direction: column;
     }
 
@@ -334,10 +339,6 @@ a:hover {
     }
 
     /* ABOUT */
-    .container-about {
-        height: 80vh;
-    }
-
     .paragraph-about {
         font-size: 30px;
     }

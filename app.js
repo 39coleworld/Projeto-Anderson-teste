@@ -1,21 +1,29 @@
-// MENU MOBILE (OPEN AND CLOSE)
+// MENU MOBILE (FECHAR E ABRIR)
 const btnMobile = document.getElementById('btn-mobile');
+const links = document.querySelectorAll("nav ul li a");
 
 function toggleMenu(event) {
   if (event.type === 'touchstart') event.preventDefault();
   const nav = document.getElementById('nav');
   nav.classList.toggle('active');
   // CÓDIGO ACESSIBILIDADE:
-  // const active = nav.classList.contains('active');
-  // event.currentTarget.setAttribute('aria-expanded', active);
-  // if (active) {
-  //   event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-  // }
-  // else {
-  //   event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-  // } if (active) {
-  //   event.currentTarget.setAttribute('menu', 'Fechar Menu');
-  // } else { }
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  }
+  else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  } if (active) {
+    event.currentTarget.setAttribute('menu', 'Fechar Menu');
+  } else { }
+}
+
+// MENU MOBILE (FECHAR AO CLICAR NOS LINKS)
+for (const link of links) {
+  link.addEventListener("click", function () {
+    nav.classList.remove("active");
+  });
 }
 
 btnMobile.addEventListener('click', toggleMenu);
